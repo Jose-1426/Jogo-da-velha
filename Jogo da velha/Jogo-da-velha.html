@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+</head>
+<style>
+  * {
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  body {
+    background-color: blanchedalmond;
+    padding-top: 50px;
+  }
+
+  div {
+    margin: auto;
+    background-color: blanchedalmond;
+    width: 410px;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  table {
+    margin: auto;
+    margin-top: 50px;
+    max-width: 100%;
+  }
+
+  tr {
+    gap: 15px;
+  }
+
+  td {
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    padding: 20px 30px;
+    font-size: 30px;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+  }
+</style>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td id="cell-0" onclick="makeMove(0)"></td>
+                <td id="cell-1" onclick="makeMove(1)"></td>
+                <td id="cell-2" onclick="makeMove(2)"></td>
+            </tr>
+            <tr>
+                <td id="cell-3" onclick="makeMove(3)"></td>
+                <td id="cell-4" onclick="makeMove(4)"></td>
+                <td id="cell-5" onclick="makeMove(5)"></td>
+            </tr>
+            <tr>
+                <td id="cell-6" onclick="makeMove(6)"></td>
+                <td id="cell-7" onclick="makeMove(7)"></td>
+                <td id="cell-8" onclick="makeMove(8)"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
